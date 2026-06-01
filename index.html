@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#110810">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Mega Julya Cahya 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop preload="auto">
+    <source src="/all-content/Track-1.mp3" type="audio/mpeg">
+</audio>
+
+    <div id="gift-overlay">
+        <div class="gift-box" onclick="openGift()">
+            <div style="position: relative; display: inline-block;">
+                <span class="gift-emoji">🎁</span>
+                <span style="position: absolute; top: -10px; right: -18px; font-size: clamp(1rem, 4vw, 1.3rem); animation: pulse 1.5s ease-in-out infinite; animation-delay: 0.3s;">✨</span>
+                <span style="position: absolute; bottom: -5px; left: -20px; font-size: clamp(0.9rem, 3.5vw, 1.1rem); animation: pulse 1.5s ease-in-out infinite; animation-delay: 0.1s;">🌸</span>
+                <span style="position: absolute; bottom: -5px; right: -20px; font-size: clamp(0.9rem, 3.5vw, 1.1rem); animation: pulse 1.5s ease-in-out infinite; animation-delay: 0.7s;">💫</span>
+            </div>
+            <p class="tap-text" style="margin-top: 1.8rem;">✨ TAP ME ✨</p>
+        </div>
+    </div>    
+
+    <div class="music-player" onclick="toggleMusic()">
+        <div class="vinyl" id="vinyl-disc">🌕</div>
+        <div>
+            <p style="font-weight: 500; font-size: clamp(0.72rem, 3vw, 0.82rem); color: var(--accent-rose);">You'll Be in My Heart</p>
+            <p id="play-status" style="color: var(--text-soft); font-size: 0.65rem; margin-top: 2px;">-> Playing...</p>  
+        </div>
+    </div>
+
+    <div id="main-content">
+        <section class="hero">
+            <div class="stars" id="stars-container"></div>
+            <div style="position: relative; z-index: 1; width: 100%;">
+                <p class="label reveal" style="margin-bottom: 1rem;">A Handmade Virtual Birthday Card</p>
+                <h1 class="font-serif reveal" style="font-size: clamp(2.2rem, 9vw, 3.5rem); font-style: italic; font-weight: 300; line-height: 1.15; color: pink; margin-bottom: 1.5rem;">
+                    Special Card For <br> 
+                    <span class="text-gradient">A Strong Little Girl</span>
+                </h1>
+                <div class="divider"></div>
+                <p class="reveal" style="font-size: 0.85rem; color: var(--text-soft); font-style: italic; max-width: 280px; margin: 1rem auto 0; line-height: 1.7; text-align: center;">
+                    "Every Moment Was Special where you are there"<br>
+                    -Ester    
+                </p>
+                <div class="scroll-hint" style="margin-top: 3rem; color: var(--accent-rose); font-size: 0.75rem; text-align: center;">
+                    <div style="font-size: 1.2rem; margin-bottom: 0.2rem;">＼ʕ•ᴥ•ʔ／</div>
+                    swipe up
+                </div>
+            </div>
+        </section>
+    
+        <div class="card reveal">
+            <p class="label" style="margin-top: 0.75rem;">From The Stranger</p>
+            <h2 class="section-title font-serif" style="margin-bottom: 1rem;">
+               A Little Girl <br> Turns To <br> A Strong Woman  
+            </h2>
+            <p class="body-text">
+                In a world full of ordinary moments, you are extraordinary.
+                The way you laugh, the way you care, 
+                the way you face it all is impressive, 
+                it shows that you are a very strong person despite all the problems you face.<br> -Mega Julya Cahya
+            </p>
+        </div>
+
+        <div class="card reveal">
+            <p class="label" style="margin-bottom: 0.5rem;">💌 My message</p>
+            <h2 class="section-title font-serif" style="margin-bottom: 0.25rem;">What i wish</h2>
+            
+            <div class="reason-grid">
+                <div class="reason-card">
+                    <p style="font-size: 1.3rem; margin-bottom: 0.4rem;">⚕️</p>
+                    <p class="accent-text" style="margin-bottom: 0.3rem;">Your Health</p>
+                    <p class="caption">I wish That You Are Healthy, Kept Away From Illness, and Given A Long Life.</p>
+                </div>
+                <div class="reason-card">
+                    <p style="font-size: 1.3rem; margin-bottom: 0.4rem;">📈</p>
+                    <p class="accent-text" style="margin-bottom: 0.3rem;">Your Career</p>
+                    <p class="caption">I wish after graduated in next year you will get some good career in here or in another country, and i hope your dreams come true.</p>
+                </div>
+                <div class="reason-card">
+                    <p style="font-size: 1.3rem; margin-bottom: 0.4rem;">🧸</p>
+                    <p class="accent-text" style="margin-bottom: 0.3rem;">Your College</p>
+                    <p class="caption">I wish you can finish your studies on time. You should be more diligent, please reduce your laziness, and hopefully you will graduate quickly.</p>
+                </div>
+                <div class="reason-card">
+                    <p style="font-size: 1.3rem; margin-bottom: 0.4rem;">✨</p>
+                    <p class="accent-text" style="margin-bottom: 0.3rem;">Your family</p>
+                    <p class="caption">I hope you can be more accepting of the current situation. I know this is very difficult for you, but it would be better if you were more open with those closest to you. I just want to remind you that many people love you.</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="card reveal" id="page-2">
+            <p class="q-label">⭐ Quick Quiz ⭐</p>
+            <p class="question">How Special You Are<br>Rate 1 to 10 ?</p>
+            <div class="options" id="opts">
+                <button class="opt-btn" onclick="pickAnswer(this, 'wrong')">🙈 Maybe around 7 ?</button>
+                <button class="opt-btn" onclick="pickAnswer(this, 'wrong')">😶 I think it's 8</button>
+                <button class="opt-btn" onclick="pickAnswer(this, 'wrong')">🤔 how about 9 ?</button>
+                <button class="opt-btn" onclick="pickAnswer(this, 'correct')">🥶 10!! It's so clear!</button>
+            </div>
+            <div class="try-again-wrap" id="try-again">
+                <div class="bubble">Oops… wrong cutie!! Try again, okay? ʕꈍᴥꈍʔ ;</div>
+                <button class="btn" onclick="resetQuiz()">Try again 🥺</button>
+            </div>
+        </div>
+
+        <div class="card reveal">
+            <p class="label" style="margin-bottom: 0.5rem;">📷 captured in time</p>
+            <h2 class="section-title font-serif">Your Beautiful<br>Pictures</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                 <img src="all-content/Photo-1.jpeg" alt="Foto 1" loading="lazy">
+        </div>
+        <div class="photo-item">
+            <img src="all-content/Photo-2.jpeg" alt="Foto 2" loading="lazy">
+        </div>
+        <div class="photo-item">
+            <img src="all-content/Photo-3.jpeg" alt="Foto 3" loading="lazy">
+                </div>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--accent-rose); font-style: italic; text-align: center; margin-top: 1rem;">
+                "You are so beautiful, always and forever."
+            </p>
+        </div>
+    
+        <div class="closing reveal">
+            <span class="heartbeat" style="font-size: clamp(2rem, 8vw, 2.5rem);">🎁</span>
+            <h2 class="section-title font-serif" style="margin: 1rem 0 0.75rem;">You Are Loved<br>Beyond Words</h2>
+            <div class="divider"></div>
+            <p style="font-size: 0.75rem; color: var(--text-soft); margin-top: 1rem; margin-bottom: 1.5rem;">Made with love, just for you :3</p>
+            <button class="share-btn" onclick="shareWebsite()">
+                <span>📤</span> Send a message 
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
